@@ -9,7 +9,10 @@ const projectSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  liveLink: {
+  googlePlayStore: {
+    type: String,
+  },
+  appleAppStore: {
     type: String,
   },
   github: {
