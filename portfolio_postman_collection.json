@@ -24,8 +24,13 @@
               "type": "text"
             },
             {
-              "key": "liveLink",
-              "value": "https://example.com",
+              "key": "googlePlayStoreLink",
+              "value": "https://play.google.com/store/apps/details?id=com.example",
+              "type": "text"
+            },
+            {
+              "key": "appleAppStoreLink",
+              "value": "https://apps.apple.com/us/app/example/id123456789",
               "type": "text"
             },
             {
@@ -62,7 +67,7 @@
           },
           "status": "Created",
           "code": 201,
-          "body": "{\n  \"name\": \"Test Portfolio Project\",\n  \"details\": \"This is a dummy project created via test script.\",\n  \"liveLink\": \"https://example.com\",\n  \"github\": \"https://github.com/example/repo\",\n  \"images\": [\n    \"https://res.cloudinary.com/dbmnia6qh/image/upload/v1784391284/portfolio_projects/dxwstebrvlxtlks0huf2.png\"\n  ],\n  \"_id\": \"6a5ba65e71e9b8214de9fe53\",\n  \"createdAt\": \"2026-07-18T16:14:22.235Z\",\n  \"updatedAt\": \"2026-07-18T16:14:22.235Z\",\n  \"__v\": 0\n}"
+          "body": "{\n  \"name\": \"Test Portfolio Project\",\n  \"details\": \"This is a dummy project created via test script.\",\n  \"github\": \"https://github.com/example/repo\",\n  \"images\": [\n    \"https://res.cloudinary.com/dbmnia6qh/image/upload/v1784391284/portfolio_projects/dxwstebrvlxtlks0huf2.png\"\n  ],\n  \"_id\": \"6a5ba65e71e9b8214de9fe53\",\n  \"createdAt\": \"2026-07-18T16:14:22.235Z\",\n  \"updatedAt\": \"2026-07-18T16:14:22.235Z\",\n  \"__v\": 0,\n  \"googlePlayStoreLink\": \"https://play.google.com/store/apps/details?id=com.example\",\n  \"appleAppStoreLink\": \"https://apps.apple.com/us/app/example/id123456789\"\n}"
         }
       ]
     },
@@ -93,7 +98,7 @@
           },
           "status": "OK",
           "code": 200,
-          "body": "[\n  {\n    \"_id\": \"6a5ba65e71e9b8214de9fe53\",\n    \"name\": \"Test Portfolio Project\",\n    \"details\": \"This is a dummy project created via test script.\",\n    \"liveLink\": \"https://example.com\",\n    \"github\": \"https://github.com/example/repo\",\n    \"images\": [\n      \"https://res.cloudinary.com/dbmnia6qh/image/upload/v1784391284/portfolio_projects/dxwstebrvlxtlks0huf2.png\"\n    ],\n    \"createdAt\": \"2026-07-18T16:14:22.235Z\",\n    \"updatedAt\": \"2026-07-18T16:14:22.235Z\",\n    \"__v\": 0\n  }\n]"
+          "body": "[\n  {\n    \"_id\": \"6a5ba65e71e9b8214de9fe53\",\n    \"name\": \"Test Portfolio Project\",\n    \"details\": \"This is a dummy project created via test script.\",\n    \"github\": \"https://github.com/example/repo\",\n    \"images\": [\n      \"https://res.cloudinary.com/dbmnia6qh/image/upload/v1784391284/portfolio_projects/dxwstebrvlxtlks0huf2.png\"\n    ],\n    \"createdAt\": \"2026-07-18T16:14:22.235Z\",\n    \"updatedAt\": \"2026-07-18T16:14:22.235Z\",\n    \"__v\": 0,\n    \"googlePlayStoreLink\": \"https://play.google.com/store/apps/details?id=com.example\",\n    \"appleAppStoreLink\": \"https://apps.apple.com/us/app/example/id123456789\"\n  }\n]"
         }
       ]
     },
@@ -125,7 +130,7 @@
           },
           "status": "OK",
           "code": 200,
-          "body": "{\n  \"_id\": \"6a5ba65e71e9b8214de9fe53\",\n  \"name\": \"Test Portfolio Project\",\n  \"details\": \"This is a dummy project created via test script.\",\n  \"liveLink\": \"https://example.com\",\n  \"github\": \"https://github.com/example/repo\",\n  \"images\": [\n    \"https://res.cloudinary.com/dbmnia6qh/image/upload/v1784391284/portfolio_projects/dxwstebrvlxtlks0huf2.png\"\n  ],\n  \"createdAt\": \"2026-07-18T16:14:22.235Z\",\n  \"updatedAt\": \"2026-07-18T16:14:22.235Z\",\n  \"__v\": 0\n}"
+          "body": "{\n  \"_id\": \"6a5ba65e71e9b8214de9fe53\",\n  \"name\": \"Test Portfolio Project\",\n  \"details\": \"This is a dummy project created via test script.\",\n  \"github\": \"https://github.com/example/repo\",\n  \"images\": [\n    \"https://res.cloudinary.com/dbmnia6qh/image/upload/v1784391284/portfolio_projects/dxwstebrvlxtlks0huf2.png\"\n  ],\n  \"createdAt\": \"2026-07-18T16:14:22.235Z\",\n  \"updatedAt\": \"2026-07-18T16:14:22.235Z\",\n  \"__v\": 0,\n  \"googlePlayStoreLink\": \"https://play.google.com/store/apps/details?id=com.example\",\n  \"appleAppStoreLink\": \"https://apps.apple.com/us/app/example/id123456789\"\n}"
         }
       ]
     },
@@ -167,7 +172,7 @@
           },
           "status": "OK",
           "code": 200,
-          "body": "{\n  \"_id\": \"6a5ba65e71e9b8214de9fe53\",\n  \"name\": \"Updated Test Project\",\n  \"details\": \"This is a dummy project created via test script.\",\n  \"liveLink\": \"https://example.com\",\n  \"github\": \"https://github.com/example/repo\",\n  \"images\": [\n    \"https://res.cloudinary.com/dbmnia6qh/image/upload/v1784391284/portfolio_projects/dxwstebrvlxtlks0huf2.png\"\n  ],\n  \"createdAt\": \"2026-07-18T16:14:22.235Z\",\n  \"updatedAt\": \"2026-07-18T16:14:22.425Z\",\n  \"__v\": 0\n}"
+          "body": "{\n  \"_id\": \"6a5ba65e71e9b8214de9fe53\",\n  \"name\": \"Updated Test Project\",\n  \"details\": \"This is a dummy project created via test script.\",\n  \"github\": \"https://github.com/example/repo\",\n  \"images\": [\n    \"https://res.cloudinary.com/dbmnia6qh/image/upload/v1784391284/portfolio_projects/dxwstebrvlxtlks0huf2.png\"\n  ],\n  \"createdAt\": \"2026-07-18T16:14:22.235Z\",\n  \"updatedAt\": \"2026-07-18T16:14:22.425Z\",\n  \"__v\": 0,\n  \"googlePlayStoreLink\": \"https://play.google.com/store/apps/details?id=com.example\",\n  \"appleAppStoreLink\": \"https://apps.apple.com/us/app/example/id123456789\"\n}"
         }
       ]
     },

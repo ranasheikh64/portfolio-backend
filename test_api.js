@@ -12,7 +12,8 @@ async function runTests() {
   const form = new FormData();
   form.append('name', 'Test Portfolio Project');
   form.append('details', 'This is a dummy project created via test script.');
-  form.append('liveLink', 'https://example.com');
+  form.append('googlePlayStoreLink', 'https://play.google.com/store/apps/details?id=com.example');
+  form.append('appleAppStoreLink', 'https://apps.apple.com/us/app/example/id123456789');
   form.append('github', 'https://github.com/example/repo');
   
   const imagePath = 'e:/rana project/my_portfolio_backend/ChatGPT Image Jul 14, 2026, 08_44_36 PM.png';
