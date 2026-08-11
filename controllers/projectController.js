@@ -30,14 +30,15 @@ exports.getProjectById = async (req, res) => {
 // @route   POST /api/projects
 exports.createProject = async (req, res) => {
   try {
-    const { name, details, liveLink, github } = req.body;
+    const { name, details, googlePlayStore, appleAppStore, github } = req.body;
     
     const images = req.files ? req.files.map(file => file.path) : [];
 
     const project = new Project({
       name,
       details,
-      liveLink,
+      googlePlayStore,
+      appleAppStore,
       github,
       images,
     });
@@ -53,7 +54,7 @@ exports.createProject = async (req, res) => {
 // @route   PUT /api/projects/:id
 exports.updateProject = async (req, res) => {
   try {
-    const { name, details, liveLink, github } = req.body;
+    const { name, details, googlePlayStore, appleAppStore, github } = req.body;
     let project = await Project.findById(req.params.id);
 
     if (!project) {
@@ -65,7 +66,8 @@ exports.updateProject = async (req, res) => {
 
     project.name = name || project.name;
     project.details = details || project.details;
-    project.liveLink = liveLink || project.liveLink;
+    project.googlePlayStore = googlePlayStore || project.googlePlayStore;
+    project.appleAppStore = appleAppStore || project.appleAppStore;
     project.github = github || project.github;
     project.images = updatedImages;
 
